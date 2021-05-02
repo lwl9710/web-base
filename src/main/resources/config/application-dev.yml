@@ -1,18 +1,18 @@
 spring:
   datasource:
     # 数据库连接url
-    url: jdbc:mysql://127.0.0.1:3306/base?useSSL=true&serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=UTF-8
+    url: jdbc:mysql://39.101.192.234:5206/base?useSSL=true&serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=UTF-8
     # 数据库用户名
     username: root
     # 数据库密码
-    password: 123456
+    password: chime!520
   redis:
     # redis主机
-    host: 127.0.0.1
+    host: 39.101.192.234
     # redis端口
-    port: 6379
+    port: 5279
     # redis密码
-    # password: 123456
+    password: chime!520
 mybatis-plus:
   configuration:
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
