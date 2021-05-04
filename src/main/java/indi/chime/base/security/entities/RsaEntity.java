@@ -1,5 +1,7 @@
 package indi.chime.base.security.entities;
 
+import indi.chime.base.security.utils.RsaUtil;
+
 import java.security.*;
 
 public class RsaEntity {
@@ -10,6 +12,11 @@ public class RsaEntity {
     private PrivateKey privateKey;
 
     public RsaEntity() {
+    }
+
+    public RsaEntity(String publicKeyPath, String privateKeyPath) {
+        this.publicKey = (PublicKey) RsaUtil.readFileForKey(publicKeyPath, RsaUtil.PUBLIC_KEY_MODE);
+        this.privateKey = (PrivateKey) RsaUtil.readFileForKey(privateKeyPath, RsaUtil.PRIVATE_KEY_MODE);
     }
 
     public RsaEntity(int size) {

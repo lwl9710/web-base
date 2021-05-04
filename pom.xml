@@ -15,14 +15,28 @@
 	<description>This is a web base project with spring boot.</description>
 	<properties>
 		<java.version>1.8</java.version>
+		<jjwt.version>0.9.1</jjwt.version>
 		<lombok.version>1.18.20</lombok.version>
 		<springfox.version>3.0.0</springfox.version>
 		<mybatis-plus.version>3.4.2</mybatis-plus.version>
 		<mysql-driver.version>8.0.23</mysql-driver.version>
 		<alibaba-druid.version>1.2.6</alibaba-druid.version>
 		<spring-boot.version>2.3.10.RELEASE</spring-boot.version>
+		<alibaba-fastjosn.version>1.2.76</alibaba-fastjosn.version>
 	</properties>
 	<dependencies>
+		<!-- JWT依赖 -->
+		<dependency>
+			<groupId>io.jsonwebtoken</groupId>
+			<artifactId>jjwt</artifactId>
+			<version>${jjwt.version}</version>
+		</dependency>
+		<!-- Alibaba JSON -->
+		<dependency>
+			<groupId>com.alibaba</groupId>
+			<artifactId>fastjson</artifactId>
+			<version>${alibaba-fastjosn.version}</version>
+		</dependency>
 		<!-- springfox依赖 -->
 		<dependency>
 			<groupId>io.springfox</groupId>
